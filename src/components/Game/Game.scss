@@ -1,0 +1,51 @@
+.game {
+  text-align: center;
+  position: relative;
+  width: 400px;
+  .items {
+    display: flex;
+    justify-content: center;
+    .item {
+      height: 160px;
+      width: 160px;
+      border: 18px solid;
+      border-radius: 50%;
+      transition: transform 0.2s;
+      background: #fff;
+      color: #3b4262;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 80px;
+    }
+
+    #paper {
+      position: absolute;
+      left: 0;
+      top: -70px;
+      border-color: #4865f4;
+      box-shadow: inset 0 5px 6px grey, 0 8px #0d31e3;
+    }
+
+    #scissors {
+      position: absolute;
+      right: 0;
+      top: -70px;
+      border-color: #ec9e0e;
+      box-shadow: inset 0 5px 6px grey, 0 8px #a46e0a;
+    }
+
+    #rock {
+      position: absolute;
+      bottom: 0;
+      left: 120px;
+      border-color: #dc2e4e;
+      box-shadow: inset 0 5px 6px grey, 0 8px #a11b34;
+    }
+  }
+
+  .item:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
